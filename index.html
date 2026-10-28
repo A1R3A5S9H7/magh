@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How We Use Generative AI Matters</title>
+<style>
+  /* ====== تنظیمات صفحه برای چاپ ====== */
+  @page {
+    size: A4;
+    margin: 2.54cm 2.54cm 2.54cm 2.54cm; /* حاشیه 1 اینچ APA */
+  }
+
+  html { -webkit-print-color-adjust: exact; }
+
+  body {
+    font-family: "Times New Roman", Times, "Liberation Serif", serif;
+    font-size: 12pt;
+    line-height: 2;              /* فاصله خطوط دوبل (APA). برای 1.5 این را 1.5 کنید */
+    color: #000;
+    margin: 0 auto;
+    max-width: 21cm;
+    padding: 2.54cm;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
+  /* در حالت چاپ، padding اضافه حذف شود چون @page حاشیه می‌دهد */
+  @media print {
+    body { padding: 0; max-width: none; }
+  }
+
+  /* ====== عنوان و نویسنده ====== */
+  .title {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+    margin: 0 0 1.5em 0;
+    text-wrap: balance;
+  }
+  .author {
+    text-align: center;
+    margin: 0 0 2em 0;
+    line-height: 1.5;
+  }
+  .author .affil { display: block; font-style: italic; font-size: 11pt; }
+
+  /* ====== تیترها ====== */
+  h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: left;
+    margin: 1.2em 0 0.3em 0;
+    line-height: 1.4;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    margin: 1em 0 0.2em 0;
+    line-height: 1.4;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  p { margin: 0 0 0.6em 0; orphans: 2; widows: 2; }
+
+  /* ====== چکیده ====== */
+  .abstract {
+    margin: 0 0 1em 0;
+  }
+  .abstract p { text-indent: 0; }
+  .keywords { margin: 0 0 1.2em 0; }
+  .keywords p { text-indent: 0; }
+
+  /* ====== فهرست‌ها ====== */
+  ul, ol { margin: 0.4em 0 0.8em 0; padding-left: 1.6em; }
+  li { margin-bottom: 0.35em; line-height: 1.6; }
+
+  /* ====== منابع: تورفتگی آویزان ====== */
+  .references p {
+    padding-left: 1.27cm;
+    text-indent: -1.27cm;   /* hanging indent 0.5 inch */
+    margin: 0 0 0.5em 0;
+    text-align: left;       /* APA: منابع چپ‌چین */
+    line-height: 1.8;
+    word-break: break-word;
+  }
+
+  /* ====== شکست صفحه ====== */
+  .page-break { page-break-before: always; break-before: page; }
+  .keep { page-break-inside: avoid; break-inside: avoid; }
+
+  a { color: #000; text-decoration: none; }
+  em, .italic { font-style: italic; }
+</style>
+</head>
+<body>
+
+<div class="title">How We Use Generative AI Matters: A Narrative Review of Interaction Mode, Learning Transfer, and Retention</div>
+
+<div class="author">
+  [Your Name]
+  <span class="affil">[Your Affiliation, City, Country] &middot; [email@example.com]</span>
+</div>
+
+<h2>Abstract</h2>
+<div class="abstract">
+<p>Generative artificial intelligence (AI) is now part of how many students study, yet the evidence on whether it builds or erodes durable learning is mixed. This narrative review argues that much of the apparent disagreement disappears once the mode of interaction is taken into account: whether the learner uses AI to receive finished answers or to receive guidance while still doing the cognitive work. Drawing on randomized field and laboratory studies, together with foundational work on transfer and desirable difficulties, the review shows a consistent pattern. Unrestricted answer-giving AI improves performance while it is available but can lower unaided performance afterwards (Bastani et al., 2025). Tutors designed around hints, stepwise guidance and active learning can produce strong gains (Kestin et al., 2025). In process-level evidence, AI support changed how learners regulated their learning without clearly improving knowledge transfer (Fan et al., 2025), and in a recent randomized experiment gains persisted for learners who used AI as a tutor but faded for those who delegated the task (Contractor &amp; Reyes, 2026). Direct, well-specified measurement of far transfer remains rare in this literature. The review closes with a pre-specifiable three-arm research protocol and practical implications for teachers and designers. Because the search was targeted rather than systematic, conclusions are presented as a structured synthesis, not a meta-analysis.</p>
+</div>
+
+<div class="keywords">
+<p><em>Keywords:</em> generative AI, learning transfer, desirable difficulties, metacognition, cognitive offloading, AI tutoring</p>
+</div>
+
+<h2>1. Introduction</h2>
+<p>Students can now obtain a fluent explanation, a worked solution or a finished essay in seconds. The central educational question is therefore no longer whether students will use generative AI but what kind of use leaves them able to think without it. A common worry is that easy answers invite cognitive offloading, so that people perform well with the tool but learn little (Contractor &amp; Reyes, 2026). A common hope is that AI can act as a patient personal tutor (Kestin et al., 2025). Both claims have empirical support, which suggests that the useful question is not &ldquo;is AI good or bad for learning?&rdquo; but &ldquo;under which conditions of use does learning transfer?&rdquo;</p>
+<p>This article reviews that question with a specific focus on three outcomes: performance on new problems (transfer), retention over time, and the learner&rsquo;s own metacognitive engagement. Section 2 sets out the theoretical frame. Section 3 describes the scope and limits of the review. Section 4 summarizes the main empirical studies. Section 5 synthesizes them around interaction mode, Section 6 identifies gaps, and Section 7 proposes a research protocol. Sections 8 to 10 cover implications, limitations and conclusions.</p>
+
+<h2>2. Theoretical Framework</h2>
+
+<h3>2.1 Performance is not learning</h3>
+<p>A foundational idea in the psychology of memory is that conditions that make performance look good during study are not necessarily those that produce durable learning. Bjork and Bjork (2011) argue that introducing certain difficulties into practice, such as spacing, varying conditions, interleaving topics and testing oneself, can slow apparent progress but strengthen long-term retention and flexible use. Importantly, they stress that a difficulty is desirable only when the learner has enough background knowledge to respond to it successfully; otherwise it becomes an undesirable difficulty (Bjork &amp; Bjork, 2011). This distinction matters for AI: a tool that removes all difficulty may remove the very effort that produces learning, whereas a tool that removes only unproductive difficulty may help.</p>
+
+<h3>2.2 Transfer is multidimensional and hard</h3>
+<p>Transfer refers to applying what was learned in a situation that differs from the original learning context. Barnett and Ceci (2002) proposed a taxonomy that describes transfer along several dimensions, with content dimensions (what is transferred) and context dimensions (when and where it is applied, including knowledge domain, physical, social and temporal context), and argued that much of the disagreement about whether far transfer exists comes from studies measuring different things. They concluded that far transfer is relatively rare but can occur under the right conditions (Barnett &amp; Ceci, 2002). For AI research, the implication is practical: a test that merely re-presents the practice problems measures near transfer or even recall, and cannot show whether a student can use an idea in a genuinely new setting.</p>
+
+<h3>2.3 Cognitive offloading and metacognitive laziness</h3>
+<p>Fan et al. (2025) define metacognitive laziness as learners&rsquo; dependence on AI assistance, offloading metacognitive load and connecting less effectively to the metacognitive processes that support learning tasks. They link the idea to earlier work on cognitive offloading (Fan et al., 2025). Self-regulated learning, which includes planning, monitoring and evaluating one&rsquo;s own understanding, is the mechanism through which this offloading could reduce learning even when task output looks strong.</p>
+
+<h2>3. Scope and Method of the Review</h2>
+<p>This is a narrative review. Sources were identified through targeted web searches in October 2026 aimed at randomized or experimental studies of generative AI and learning outcomes, plus searches for the foundational theory on transfer and desirable difficulties. Priority was given to peer-reviewed journal articles; one very recent randomized experiment available as a preprint was also included and is labelled as such. The review did not follow a systematic protocol (for example, PRISMA), did not search every database, and did not assess risk of bias formally. It therefore describes a coherent body of evidence rather than estimating a pooled effect. Where a statistic is reported, it is the figure given by the original authors.</p>
+
+<h2>4. Empirical Evidence</h2>
+
+<h3>4.1 Unrestricted answer-giving AI can harm unaided learning</h3>
+<p>Bastani et al. (2025) ran a field experiment with nearly one thousand high school mathematics students in Turkey. Students practiced with one of three supports: a standard ChatGPT-style interface (&ldquo;GPT Base&rdquo;), a tutor version designed to safeguard learning with teacher-informed hints and no direct answers (&ldquo;GPT Tutor&rdquo;), or no AI (Knowledge at Wharton, n.d.). During AI-assisted practice, the GPT Base group scored about 48% higher than the control group, and the GPT Tutor group about 127% higher (Knowledge at Wharton, n.d.). When AI was then removed and students took an exam, the GPT Base group scored 17% lower than students who never had access, while the GPT Tutor group performed about the same as the control group (Bastani et al., 2025; Knowledge at Wharton, n.d.). The authors interpret this as students using the unrestricted model as a crutch during practice, with the safeguards largely mitigating the harm (Bastani et al., 2025). The same coverage notes that students who relied on AI were overly optimistic about their abilities (Knowledge at Wharton, n.d.).</p>
+<p>This study is the clearest demonstration of the gap between supported performance and unaided learning described in Section 2.1.</p>
+
+<h3>4.2 A tutor designed around active learning can produce large gains</h3>
+<p>Kestin et al. (2025) compared an AI tutor with an in-class active learning lesson in an undergraduate physics course using a randomized crossover design, in which each student experienced both conditions in different weeks (Kestin et al., 2025). The AI tutor was built on the same pedagogical practices as the in-class lessons rather than being a general-purpose chatbot (Kestin et al., 2025). Learning gains were more than double in the AI condition, with less time on task and higher self-reported engagement and motivation (Kestin et al., 2025). Median post-test scores were 4.5 for the AI group versus 3.5 for the active learning group, against a pre-test baseline median of 2.75 (Kestin et al., 2025).</p>
+<p>Two cautions apply. First, the comparison was against one particular active learning lesson, not against no instruction (Contractor &amp; Reyes, 2026). Second, students chose how much time to spend, so the effect mixes changes in time use and changes in learning efficiency (Contractor &amp; Reyes, 2026). The result therefore shows what a carefully designed tutor can do, not what any AI tool will do.</p>
+
+<h3>4.3 Process evidence: AI changes how learners regulate learning</h3>
+<p>Fan et al. (2025) randomly assigned learners to receive support from generative AI, a human expert or a checklist tool on a writing task, and compared motivation, self-regulated learning processes and performance. They found that the AI condition improved task performance, but did not produce significant differences in motivation or in knowledge transfer, and that AI learners showed fewer metacognitive processes such as orientation and evaluation than learners supported by a human expert (Fan et al., 2025). The authors read this as a sign of possible metacognitive laziness: output improved while the regulation of learning did not (Fan et al., 2025).</p>
+
+<h3>4.4 Off-the-shelf AI: the learner&rsquo;s use makes the difference</h3>
+<p>Contractor and Reyes (2026) report a preregistered randomized experiment with 211 undergraduates at a U.S. college. Students learned an unfamiliar topic in a timed session either with or without a general-purpose chatbot, and then took unaided tests immediately and about one week later (Contractor &amp; Reyes, 2026). Allowing AI raised immediate test scores by about 0.28 standard deviations and one-week scores by about 0.21 standard deviations, a smaller but persisting gain (Contractor &amp; Reyes, 2026). Total study time did not change, but students shifted time from writing toward reading and searching (Contractor &amp; Reyes, 2026).</p>
+<p>The most relevant result for this review is the split by how students used the tool. Using conversation logs, the authors classified 61% of AI users as augmentation users (AI works with the student, for example by explaining concepts), 9% as automation users (AI does the work) and 27% as mixed (Contractor &amp; Reyes, 2026). The essay advantage that automation users showed during the session was absent from their unaided essays a week later, whereas augmentation users kept a positive test-score difference (Contractor &amp; Reyes, 2026). The authors stress that this comparison by use type is descriptive, because students chose how to use AI (Contractor &amp; Reyes, 2026).</p>
+<p>The same paper also summarizes other studies that randomize or observe use of the same tool, reporting, for instance, that learners who asked for hints scored higher on unaided problems than those who asked for answers (Contractor &amp; Reyes, 2026). These secondary reports should be checked against the original papers before being relied upon.</p>
+
+<h3>4.5 Learners&rsquo; beliefs are poorly calibrated</h3>
+<p>In the same experiment, students who had not been allowed AI predicted that it would raise their own score by about 25.5 percentage points, roughly 6.5 times the effect the authors estimated, while students who had used AI predicted an effect close to the estimate (Contractor &amp; Reyes, 2026). Test scores rose with AI access, yet students&rsquo; self-assessed knowledge did not differ between groups (Contractor &amp; Reyes, 2026). Together with the optimism noted by Bastani et al. in the Turkish study (Knowledge at Wharton, n.d.), this suggests that learners cannot always tell from experience whether a way of using AI is helping them.</p>
+
+<h2>5. Synthesis: Interaction Mode as the Moderating Variable</h2>
+<p>The studies differ in age group, subject, task and design, so they cannot be pooled. Nevertheless a common structure emerges.</p>
+<p><em>Answers versus guidance.</em> Where the tool supplied answers on demand, supported performance rose and unaided learning stagnated or fell (Bastani et al., 2025). Where the tool withheld answers and prompted the learner to act, the unaided penalty was largely removed in the mathematics study (Bastani et al., 2025), and in the physics study a tutor built on active learning principles produced large gains (Kestin et al., 2025).</p>
+<p><em>Who does the cognitive work.</em> In the experiment with a general chatbot, gains survived for learners who used AI to understand and did not survive for those who used it to produce the product (Contractor &amp; Reyes, 2026). This fits the desirable-difficulties view that effortful processing is what builds durable memory (Bjork &amp; Bjork, 2011).</p>
+<p><em>Regulation of learning.</em> Process data show that AI support can reduce metacognitive activity even while output improves (Fan et al., 2025), which helps explain why output quality is a poor proxy for learning.</p>
+<p><em>Prior knowledge as a boundary condition.</em> Bjork and Bjork (2011) note that difficulty helps only if the learner can respond to it. A hint-only tutor may therefore frustrate novices, and an answer-giving tool may be least harmful for experts who already have the knowledge to check it. This is a theoretical expectation, not a finding of the reviewed studies, and it should be tested.</p>
+
+<h2>6. Gaps in the Evidence</h2>
+<ol>
+  <li><strong>Far transfer is rarely the primary outcome.</strong> The reviewed studies mostly assess unaided performance on closely related tests, essays or exams. Using the Barnett and Ceci (2002) taxonomy, most outcomes are best described as near transfer or retention, so claims about transfer to new contexts remain largely unsupported.</li>
+  <li><strong>Short horizons.</strong> The longest unaided follow-up in the studies reviewed here was about one week (Contractor &amp; Reyes, 2026). Effects over a semester or longer are unknown.</li>
+  <li><strong>Use type is usually self-selected.</strong> The augmentation versus automation contrast comes from observed behavior, not random assignment (Contractor &amp; Reyes, 2026).</li>
+  <li><strong>Tool heterogeneity.</strong> Custom-designed tutors and general chatbots differ so much in design that findings about one do not automatically extend to the other (Contractor &amp; Reyes, 2026).</li>
+  <li><strong>Process quality is seldom measured.</strong> Few studies assess whether learners can explain their own reasoning, although Fan et al. (2025) show that process measures can reveal differences that outcome scores miss.</li>
+</ol>
+
+<h2>7. Proposed Research Protocol</h2>
+<p>A study that addresses these gaps could randomly assign learners, stratified by prior knowledge, to three conditions for the same topic and the same study time: (a) no AI; (b) AI that gives stepwise hints but withholds complete solutions; and (c) AI that gives complete solutions on request. Following the logic of the studies above, the protocol would include:</p>
+<ul>
+  <li>Immediate test on similar problems to measure initial learning.</li>
+  <li>Near-transfer and far-transfer tests, with problem features varied along dimensions specified in advance using the Barnett and Ceci (2002) taxonomy.</li>
+  <li>A delayed unaided test after at least one week, with a longer follow-up where feasible, since previous work extended only to about one week (Contractor &amp; Reyes, 2026).</li>
+  <li>A reasoning-explanation task scored with a rubric, to test whether the quality of the learner&rsquo;s own explanations is associated with performance on new problems.</li>
+  <li>Conversation logs to describe how participants actually used the tool, following Contractor and Reyes (2026).</li>
+  <li>Pre-registration of hypotheses, outcomes and analysis plan, so that null or opposite results are informative.</li>
+</ul>
+<p>These are research hypotheses to be tested, not results. They are: (H1) the hint condition will outperform the answer condition on unaided novel problems; (H2) success on practice problems will not by itself predict transfer performance; and (H3) the quality of learners&rsquo; explanations will be associated with transfer. Any study involving students requires ethical approval, informed consent and, for minors, guardian permission and school coordination.</p>
+
+<h2>8. Implications for Practice</h2>
+<ul>
+  <li><strong>Design for guidance, not answers.</strong> Tools used for learning should require an attempt first and offer hints before solutions, as in the designs that performed well (Bastani et al., 2025; Kestin et al., 2025).</li>
+  <li><strong>Assess unaided and on new problems.</strong> Teachers who judge learning only by work done with AI risk mistaking supported performance for learning (Bastani et al., 2025).</li>
+  <li><strong>Teach learners how to use AI.</strong> Because students can misjudge how much AI helps (Contractor &amp; Reyes, 2026), explicit guidance on augmentation-style use, such as asking for explanations and checking one&rsquo;s own reasoning, is likely to be valuable.</li>
+  <li><strong>Protect effortful processing.</strong> Following Bjork and Bjork (2011), keep difficulties that are within learners&rsquo; reach, and remove only those that do not contribute to learning.</li>
+</ul>
+
+<h2>9. Limitations</h2>
+<p>This review is narrative and based on a targeted rather than exhaustive search. It relies on a small number of studies, one of which is a preprint that had not completed peer review at the time of writing. Some figures (such as the practice-session percentages in the Turkish study) are taken from a university summary of the original paper (Knowledge at Wharton, n.d.). The studies differ in populations and outcomes, which limits comparison. Authors should verify every quotation and statistic against the original sources before submission.</p>
+
+<h2>10. Conclusion</h2>
+<p>The evidence does not support the claim that generative AI uniformly helps or uniformly harms learning. It supports a narrower and more useful claim: the way learners interact with AI shapes whether performance with the tool turns into capability without it. Answer-giving use tends to raise supported performance without building unaided ability, while guided, effortful use can preserve or enhance learning. The key open problem is far transfer, which has seldom been measured directly. Well-specified experiments that vary interaction mode, assess near and far transfer and follow learners over longer periods would settle questions that the present literature can only point toward.</p>
+
+<h2 class="page-break">References</h2>
+<div class="references">
+  <p>Barnett, S. M., &amp; Ceci, S. J. (2002). When and where do we apply what we learn? A taxonomy for far transfer. <em>Psychological Bulletin, 128</em>(4), 612&ndash;637. https://doi.org/10.1037/0033-2909.128.4.612</p>
+  <p>Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakc&#305;, &Ouml;., &amp; Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. <em>Proceedings of the National Academy of Sciences, 122</em>(26), Article e2422633122. https://doi.org/10.1073/pnas.2422633122</p>
+  <p>Bjork, E. L., &amp; Bjork, R. A. (2011). Making things hard on yourself, but in a good way: Creating desirable difficulties to enhance learning. In M. A. Gernsbacher, R. W. Pew, L. M. Hough, &amp; J. R. Pomerantz (Eds.), <em>Psychology and the real world: Essays illustrating fundamental contributions to society</em> (pp. 56&ndash;64). Worth Publishers.</p>
+  <p>Contractor, Z., &amp; Reyes, G. (2026). <em>Experimental evidence on the learning impact of generative AI</em> [Preprint]. arXiv. https://arxiv.org/pdf/2607.08849</p>
+  <p>Fan, Y., Tang, L., Le, H., Shen, K., Tan, S., Zhao, Y., Shen, Y., Li, X., &amp; Ga&scaron;evi&#263;, D. (2025). Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and performance. <em>British Journal of Educational Technology, 56</em>(2), 489&ndash;530. https://doi.org/10.1111/bjet.13544</p>
+  <p>Kestin, G., Miller, K., Klales, A., Milbourne, T., &amp; Ponti, G. (2025). AI tutoring outperforms in-class active learning: An RCT introducing a novel research-based design in an authentic educational setting. <em>Scientific Reports, 15</em>, Article 17458. https://doi.org/10.1038/s41598-025-97652-6</p>
+  <p>Knowledge at Wharton. (n.d.). <em>Without guardrails, generative AI can harm education</em>. University of Pennsylvania, The Wharton School. https://knowledge.wharton.upenn.edu/article/without-guardrails-generative-ai-can-harm-education/</p>
+</div>
+
+</body>
+</html>
